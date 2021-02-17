@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+       James' Portfolio Website
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/CF_portfolio_fav.ico">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.production.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+       <!--Maybe make a better logo-->
+      <img class="page-header__item logo-image" src="./img/My-logo.png" alt="logo">
+      <nav class="page-header__item">
+        <ul class="navigation-list" role="menubar">
+          <li role="presentation">
+            <a class="navigation-list__item" href="./index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+             <a class="navigation-list__item" href="./about.html" role="menuitem">About Me</a>
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" href="./work.html" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" id="navigation-list__item--active" href="./contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact">
+      <h1>Contact Info</h1>
+      <p>
+        Phone: <a href="tel:18107723801" aria-label="James' Phone Number">(810) 772-3801</a> <br>
+        E-mail: <a href="mailto:j.r.rutkowski52@gmail.com">j.r.rutkowski52(at)gmail(dot)com</a>
+      </p>
+      <a href="mailto:j.r.rutkowski52@gmail.com">Contact Me</a>   <br><br>
+      <form action="" method="post">
+        <label for="user-name">Name:</label>
+        <input id="user-name" placeholder="Izumi Tanaka"> <br><br>
+
+        <label for="contact-email">Email: </label>
+        <input type="email" id="contact-email" placeholder="your-email@service.com" required> <br><br>
+
+        <label for="contact-phone-number">Telephone: </label>
+        <input id="contact-phone-number" type="tel" placeholder="(111) 111-1111"> <br><br>
+
+        <label for="user-message">Message: </label> <br>
+        <textarea id="user-message" maxlength="500" placeholder="message up to 500 characters" required></textarea> <br>
+
+        <button type="submit">Submit Message</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="#"><img src="./img/github.svg" alt="Github"></a>
+        <a href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
+      </div>
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+
+:root {
+  --font-color: #000;
+  --button: #27b374;
+  --button-border: #155E36;
+  --link: #195ae6;
+  --link-click: #a496f0;
+  --link-visited: #31676b;
+  --main-border: #ccc;
+  --bold: 700;
+  --not-bold: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "noto sans jp", sans-serif;
+  font-size: 18px;
+  color: var(--font-color);
+  line-height: 1.5;
+  font-weight: var(--not-bold);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: var(bold);
+}
+
+a {
+  color: var(--link);
+}
+
+/* css for links already visted */
+a:visited {
+  color: #31676b;
+}
+
+/* css for links during click*/
+a:active{
+  color: var(--link-click);
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+button, 
+#button {
+  display: inline-block;
+  margin: 10px;
+  border: none;
+  text-decoration: none;
+  background-color: var(--button);
+  border-bottom: 2px solid var(--button-border);
+  padding: 10px;
+  font-family: inherit;
+  color: var(--font-color);
+  transition: opacity .5s;
+}
+
+button:hover, 
+button:focus,
+#button:hover,
+#button:focus {
+  opacity: .8;
+  cursor: pointer;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.about {
+  text-align: center;
+}
+
+.contact {
+  margin-left: 20px;
+}
+
+/*If grid fails*/
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* CSS relating to the header */
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--main-border);
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.logo-image {
+  width: 150px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list__item:before,
+.navigation-list__item:after {
+  padding: 0 5px 0 5px;
+  display: inline-block;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.navigation-list__item:before {
+  transform: translateX(10px);
+  content: '<'
+}
+
+.navigation-list__item:after {
+  transform: translateX(-10px);
+  content: '>'
+}
+
+.navigation-list__item:hover:before,
+.navigation-list__item:hover:after {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.navigation-list li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+#navigation-list__item--active {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.profile {
+  margin-top: 80px;
+}
+
+@keyframes run-away {
+  0% {transform: translateX(0);}
+  5% {transform: translateX(-40rem);}
+  75% {transform: translateX(-40rem);}
+  80% {transform: translateX(-25rem);}
+  95% {transform: translateX(-25rem);}
+  100% {transform: translateX(0);}
+}
+
+.profile-image {
+  float: left;
+  border-radius: 50%;
+  width: 250px;
+  margin-left: 20%;
+  margin-right: 5%;
+  animation-name: run-away;
+  animation-duration: 10s;
+  animation-delay: 30s;
+}
+
+
+.silly-stuff,
+.silly-stuff2 {
+  position: absolute;
+  left: 25%;
+  opacity: 0;
+}
+
+.silly-stuff {
+  animation-name: new-text;
+  animation-delay: 32s;
+  animation-duration: 3s;
+}
+
+.silly-stuff2 {
+  animation-name: new-text;
+  animation-delay: 36s;
+  animation-duration: 3s;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.work-headline {
+ text-align: center;
+}
+
+/*fake CV page */
+@keyframes new-text {
+  0%   {opacity: 0;}
+  35% {opacity: 1;}
+  65% {opacity: 1;}
+  100%   {opacity: 0;}
+}
+
+.cv-page__header {
+  margin-top: 25%;
+  color: #f00;
+  text-align: center;
+}
+
+.cv-page__item1 {
+  text-align: center;
+  color: var(--font-color);
+  opacity: 0;
+  animation-name: new-text;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+.cv-page__item2 {
+  color: var(--font-color);
+  opacity: 0;
+  text-align: center;
+  animation-name: new-text;
+  animation-duration: 5s;
+  animation-delay: 8s;
+}
+
+/*animations for SVG image*/
+@keyframes color-change {
+  from {
+    fill: #EBBE62;
+  }
+  to {
+    fill: #EB8862;
+  }
+  to {
+    fill: #E5384A;
+  }
+}
+
+.sun {
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(35deg);}
+  75% {transform: rotate(-35deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.petal,
+.petal2,
+.petal-border,
+.petal-border2 {
+ animation-name: rotation;
+ animation-iteration-count: infinite;
+ animation-duration: 15s;
+ transform-box: fill-box;
+ transform-origin: center center;
+}
+
+.petal2,
+.petal-border2 {
+animation-direction: reverse;
+}
+
+/*overwrites previous .grid if actually supported*/
+@supports (display: grid) {
+  
+  .grid {
+    margin: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+
+  .grid__item {
+    background-color: var(--main-border);
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Below are all media quaries for smaller screens */
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    clear: both;
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px
+  }
+
+  .grid {
+    grid-gap: 5px;
+  }
+
+  .page-header {
+    flex-wrap: wrap;
+  }
+
+  .navigation-list {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .profile-image {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-description {
+    text-align: center;
+  }
+
+  .page-header__item:last-child{
+   min-width: 450px;
+  }
+}
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header__item:last-child {
+    text-align: left;
+  }
+
+  .silly-stuff,
+  .silly-stuff2 {
+    top: 35%
+  }
+
+  .page-header__item:last-child{
+    min-width: 250px;
+   }
+}
+
+@media all and (max-width: 350px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .page-header__item{
+    min-width: 176px;
+  }
+}
