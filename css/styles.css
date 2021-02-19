@@ -120,6 +120,9 @@ margin: auto;
 
 .navigation-list {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem 7rem;
+  justify-content: end;
 }
 
 .navigation-list__item:before,
@@ -349,11 +352,13 @@ animation-direction: reverse;
 
   .page-header {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .navigation-list {
-    padding-left: 0;
-    text-align: left;
+    display: grid;
+    grid-template-columns: 7em 7em;
+    justify-content: end;
   }
 
   .profile-image {
@@ -364,10 +369,6 @@ animation-direction: reverse;
 
   .profile-description {
     text-align: center;
-  }
-
-  .page-header__item:last-child{
-   min-width: 450px;
   }
 }
 
@@ -386,9 +387,9 @@ animation-direction: reverse;
     top: 35%
   }
 
-  .page-header__item:last-child{
-    min-width: 250px;
-   }
+  .navigation-list {
+    justify-content: center;
+  }
 }
 
 @media all and (max-width: 350px) {
