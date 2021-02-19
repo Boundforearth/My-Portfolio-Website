@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.production.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -38,19 +38,20 @@
         Phone: <a href="tel:18107723801" aria-label="James' Phone Number">(810) 772-3801</a> <br>
         E-mail: <a href="mailto:j.r.rutkowski52@gmail.com">j.r.rutkowski52(at)gmail(dot)com</a>
       </p>
-      <a href="mailto:j.r.rutkowski52@gmail.com">Contact Me</a>   <br><br>
-      <form action="" method="post">
-        <label for="user-name">Name:</label>
+      <a id="button" href="mailto:j.r.rutkowski52@gmail.com">Contact Me</a>   <br><br>
+      <!--Add an action when I learn about it-->
+      <form action="temporarily-none" method="post">
+        <label for="user-name">Name:</label> <br>
         <input id="user-name" placeholder="Izumi Tanaka"> <br><br>
 
-        <label for="contact-email">Email: </label>
+        <label for="contact-email">Email: </label> <br>
         <input type="email" id="contact-email" placeholder="your-email@service.com" required> <br><br>
 
-        <label for="contact-phone-number">Telephone: </label>
+        <label for="contact-phone-number">Telephone: </label> <br>
         <input id="contact-phone-number" type="tel" placeholder="(111) 111-1111"> <br><br>
 
         <label for="user-message">Message: </label> <br>
-        <textarea id="user-message" maxlength="500" placeholder="message up to 500 characters" required></textarea> <br>
+        <textarea id="user-message" maxlength="500" placeholder="Up to 500 characters" required></textarea> <br>
 
         <button type="submit">Submit Message</button>
       </form>
