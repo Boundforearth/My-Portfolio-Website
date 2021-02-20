@@ -83,16 +83,25 @@ table {
 }
 
 .contact form {
-max-width: 250px;
-margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 350px;
+
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 20px;
+}
+
+.contact form label {
+  margin-bottom: 5px;
 }
 
 .contact form button {
-  display: block;
   text-align: center;
 }
-
-
 
 /* CSS relating to the header */
 .page-header {
@@ -121,7 +130,7 @@ margin: auto;
 .navigation-list {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 7rem 7rem 7rem 7rem;
+  grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
   justify-content: end;
 }
 
@@ -150,8 +159,7 @@ margin: auto;
 }
 
 .navigation-list li {
-  margin-left: 10px;
-  display: inline-block;
+  text-align: center;
 }
 
 #navigation-list__item--active {
@@ -357,7 +365,7 @@ animation-direction: reverse;
 
   .navigation-list {
     display: grid;
-    grid-template-columns: 7em 7em;
+    grid-template-columns: 7.5em 7.5em;
     justify-content: end;
   }
 
