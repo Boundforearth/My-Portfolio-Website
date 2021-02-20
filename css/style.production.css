@@ -94,17 +94,6 @@ table {
   text-align: center;
 }
 
-.contact form {
-max-width: 250px;
-margin: auto;
-}
-
-.contact form button {
-  display: block;
-  text-align: center;
-}
-
-
 
 /* CSS relating to the header */
 .page-header {
@@ -140,8 +129,8 @@ margin: auto;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7rem 7rem 7rem 7rem;
-  grid-template-columns: 7rem 7rem 7rem 7rem;
+  -ms-grid-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
+  grid-template-columns: 7.5rem 7.5rem 7.5rem 7.5rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -180,8 +169,7 @@ margin: auto;
 }
 
 .navigation-list li {
-  margin-left: 10px;
-  display: inline-block;
+  text-align: center;
 }
 
 #navigation-list__item--active {
@@ -460,8 +448,8 @@ animation-direction: reverse;
   .navigation-list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 7em 7em;
-    grid-template-columns: 7em 7em;
+    -ms-grid-columns: 7.5em 7.5em;
+    grid-template-columns: 7.5em 7.5em;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
