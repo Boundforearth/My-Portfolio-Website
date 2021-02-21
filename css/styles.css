@@ -378,6 +378,13 @@ animation-direction: reverse;
   .profile-description {
     text-align: center;
   }
+
+
+  .silly-stuff,
+  .silly-stuff2 {
+    top: 35%
+  }
+
 }
 
 
@@ -388,11 +395,6 @@ animation-direction: reverse;
 
   .page-header__item:last-child {
     text-align: left;
-  }
-
-  .silly-stuff,
-  .silly-stuff2 {
-    top: 35%
   }
 
   .navigation-list {
