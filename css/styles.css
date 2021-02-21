@@ -16,8 +16,6 @@
 }
 
 body {
-  min-height: 100vh;
-  position: relative;
   font-family: "noto sans jp", sans-serif;
   font-size: 18px;
   color: var(--font-color);
@@ -77,6 +75,13 @@ table {
 .about {
   text-align: center;
 }
+/* */
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 /* contact page items */
 .contact-info {
   text-align: center;
@@ -218,10 +223,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 0;
   border-top: 1px solid var(--main-border);
-  margin-bottom: -150px;
   width: 100%;
 }
 
