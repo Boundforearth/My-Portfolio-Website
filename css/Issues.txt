@@ -1,12 +1,17 @@
 Problem: the animated tags on the "about me" and "contact" are not positioned correctly. On all browsers.
 
-solution: - center them to create more space. Remove the left margin that was in place
+Solution: - Center them to create more space. Remove the left margin that was in place
           - Expand size of grid items from 7rem to 7.5rem.  
                 -All this makes enough room for the animation to fit without going to the next line
 
 
 Problem: Contact page inputs dont shrink enough on Firefox when the wnidow gets smaller.  Min-width: 0; does nothing.
 
-Solution: - make the contact form a flexbox
-          - add bottom margins to create proper spacing
-          - delete all breaks from contact.html to fix spacing issues in all browsers other than Firefox
+Solution: - Make the contact form a flexbox
+          - Add bottom margins to create proper spacing
+          - Delete all breaks from contact.html to fix spacing issues in all browsers other than Firefox
+
+
+Problem: Some hidden animated text shows up in the wrong position from 750px to 500px.
+
+Solution: - Moved the media query from max-width: 500px to max-width: 750px;
