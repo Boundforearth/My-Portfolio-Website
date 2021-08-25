@@ -1,10 +1,23 @@
 /*
-* Prefixed by https://autoprefixer.github.io
+* Prefixed by:
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
+
+
+:root {
+  --font-color: #000;
+  --button: #27b374;
+  --button-border: #155E36;
+  --link: #195ae6;
+  --link-click: #a496f0;
+  --link-visited: #31676b;
+  --main-border: #ccc;
+  --bold: 700;
+  --not-bold: 400;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -16,9 +29,9 @@ body {
   position: relative;
   font-family: "noto sans jp", sans-serif;
   font-size: 18px;
-  color: #000;
+  color: var(--font-color);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: var(--not-bold);
 }
 
 h1 {
@@ -27,7 +40,7 @@ h1 {
 }
 
 a {
-  color: #195ae6;
+  color: var(--link);
 }
 
 /* css for links already visted */
@@ -37,38 +50,24 @@ a:visited {
 
 /* css for links during click*/
 a:active{
-  color: #a496f0;
+  color: var(--link-click);
 }
 
 a:hover, a:focus{
   text-decoration: none;
 }
 
-button {
-  display: inline-block;
-  margin: 10px;
-  border: none;
-  text-decoration: none;
-  background-color: #27b374;
-  border-bottom: 2px solid #155E36;
-  padding: 10px;
-  font-family: inherit;
-  color: #000;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
-}
-
+button, 
 #button {
   display: inline-block;
   margin: 10px;
   border: none;
   text-decoration: none;
-  background-color: #27b374;
-  border-bottom: 2px solid #155E36;
+  background-color: var(--button);
+  border-bottom: 2px solid var(--button-border);
   padding: 10px;
   font-family: inherit;
-  color: #000;
+  color: var(--font-color);
   -webkit-transition: opacity .5s;
   -o-transition: opacity .5s;
   transition: opacity .5s;
@@ -127,7 +126,7 @@ table {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--main-border);
 }
 
 .page-header__item {
@@ -198,7 +197,7 @@ table {
 }
 
 #navigation-list__item--active {
-  color: #000;
+  color: var(--font-color);
   text-decoration: none;
 }
 
@@ -265,6 +264,12 @@ table {
           animation-duration: 3s;
 }
 
+.grid__item > p, .grid__item a {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+}
+
 /*footer*/
 .page-footer {
   clear: both;
@@ -280,7 +285,7 @@ table {
           align-items: center;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--main-border);
   margin-bottom: -150px;
   width: 100%;
 }
@@ -308,7 +313,7 @@ table {
 
 .cv-page__item1 {
   text-align: center;
-  color: #000;
+  color: var(--font-color);
   opacity: 0;
   -webkit-animation-name: new-text;
           animation-name: new-text;
@@ -321,7 +326,7 @@ table {
 }
 
 .cv-page__item2 {
-  color: #000;
+  color: var(--font-color);
   opacity: 0;
   text-align: center;
   -webkit-animation-name: new-text;
@@ -429,7 +434,7 @@ animation-direction: reverse;
   }
 
   .grid__item {
-    background-color: #ccc;
+    background-color: var(--main-border);
     padding: 10px;
     width: auto;
     height: auto;
@@ -490,10 +495,12 @@ animation-direction: reverse;
     text-align: center;
   }
 
+
   .silly-stuff,
   .silly-stuff2 {
     top: 35%
   }
+
 }
 
 

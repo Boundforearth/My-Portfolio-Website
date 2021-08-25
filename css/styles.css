@@ -212,6 +212,12 @@ table {
   animation-duration: 3s;
 }
 
+.grid__item > p, .grid__item a {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+}
+
 /*footer*/
 .page-footer {
   clear: both;
