@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.production.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -34,58 +34,101 @@
       </nav>
     </header> 
     <section class="work">
-      <h1 class="work-headline">Work</h1>
+      <h1 class="work-headline">Work Overview</h1>
       <div class="grid">
         <!--grids go in the grid class-->
         <div class="grid__item">
           <h2>Who's That Pokemon App</h2>
-          <p>This is an app built using HTML, CSS, and JavaScript that fetches data from the PokeAPI and displays a list of Pokemon based on which generation the Pokemon is from.  A Pokemon may be selected which will bring up a modal full of additional information about the chosen Pokemon, as well as giving the option to view the previous or the next Pokemon in the list. <br> <br>
-            With this project I learned about the basics of JavaScript as well as DOM Interaction, AJAX, Bootstrap a little bit of JQuery, and a bit about debugging
+          <div >
+            <img class="example-img" alt="Pokedex App Image" src="./img/Pokedex.png"/>
+          </div>
+          <p>
+            A Poedex app that fetches data from an external API. It was built with JavaScript and allows users to view various information about Pokemon.
           </p>
-          <a href="https://github.com/Boundforearth/Who-is-that-Pokemon">Code on GitHub</a>
-          <a href="https://boundforearth.github.io/Who-is-that-Pokemon/">Live App</a>
+          <a class="link-btn" href="pokemon-project.html">
+            Read More
+          </a>
+          <a target="_blank" rel="noopener noreferrer" class="link-btn" href="https://github.com/Boundforearth/Who-is-that-Pokemon">Code on GitHub</a>
+          <a target="_blank" rel="noopener noreferrer" class="link-btn" href="https://boundforearth.github.io/Who-is-that-Pokemon/">Live App</a>
         </div>
         <div class="grid__item">
           <h2>myFlix API</h2>
-          <p>In this project I built an API from scratch using node.js with express that will serve as the backend to the myFlix app. It allows users to log-in, view information about movies, genres, and directors in the database, and allows them to make a list of their favorite movies. <br> <br>
-            In this project I learned about node.js, express, mongoose, and NoSQL database MongoDB. I also learned about hosting my backend on Heroku.
+          <div>
+            <img class="example-img" alt="Movie API code image" src="./img/Movie-API.png"/>
+          </div>
+          <p>
+            An API for a potential movie app built in Node.js.  It provides functionality for 
+            users to create an account and retrieve information about movies from a NoSQL database.
           </p>
-          <a href="https://github.com/Boundforearth/movie_api">Code on GitHub</a>
+          <a class="link-btn" href="./movie-api.html">
+            Read More
+          </a>
+          <a target="_blank" rel="noopener noreferrer" class="link-btn" href="https://github.com/Boundforearth/movie_api">Code on GitHub</a>
         </div>
         <div class="grid__item">
-          <h2>myFlix Client</h2>
-          <p>This is a front-end project for a movie app that allows users to create an account, log-in, update information and view movies from a database. The backend of this project is the myFlix API that I built and the frontend uses the React framework. <br> <br>
-            I learned about various parts of the React framework when building this project, such as states, props, and components.  I also learned about how React uses a virtual DOM when rendering parts of the page.  Styling for this project was done with React Bootstrap as well as some custom CSS.
+          <h2>myFlix React</h2>
+          <div >
+            <img class="example-img" alt="React Movie App Image" src="./img/myFlix-React.png"/>
+          </div>
+          <p>
+            A movie app built in React. It uses the movie API I created and allows users 
+            to view movie information and create a favorites list.
           </p>
-          <a href="https://github.com/Boundforearth/myFlix-client">Code on Github</a>
-          <a href="https://james-myflix.netlify.app/">Live App</a>
+          <a class="link-btn" href="myFlix-react.html">
+            Read More
+          </a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/myFlix-client">Code on Github</a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://james-myflix.netlify.app/">Live App</a>
         </div>
         <div class="grid__item">
           <h2>Meet App</h2>
-          <p>This is Progressive Web App that loads data from an external API, Google Calendars in this case, and loads a list of events.  The events listed can be filtered based on location and the number of events viewed at a given time can be adjusted by the user.  Charts at the top of the page will adjust to show information based on the events currently listed. <br> <br>
-            Building this app took me through the process of setting up serverless using Amazon Web Services (AWS) and how to make data on in the app available to users when they have no Internet access.  This was built in the React framework and uses CSS for styling.  Charts were created using the Recharts library.
+          <div >
+            <img class="example-img" alt="Meet App Image" src="./img/Meet.png"/>
+          </div>
+          <p>
+            A Progressive Web App that allows users get information about events in a location of their choosing.
           </p>
-          <a href="https://github.com/Boundforearth/meet">Code on Github</a>
-          <a href="https://boundforearth.github.io/meet/">Live App</a>
+          <a class="link-btn" href="./meet-app.html">
+            Read More
+          </a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/meet">Code on Github</a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://boundforearth.github.io/meet/">Live App</a>
         </div>
         <div class="grid__item">
-          <h2>Project 5</h2>
-          <p>Placeholder for a future project I plan to create</p>
-          <a href="#">Link</a>
+          <h2>Chat App</h2>
+          <div>
+            <img class="example-img" alt="Chat App Image" src="./img/Chat.png"/>
+          </div>
+          <p>
+            A chat app built with React Native using the Gifted Chat library. It allows users to set a username and exchange messages and photos.
+          </p>
+          <a class="link-btn" href="./chat-app.html">
+            Read More
+          </a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/Chat-App">Code on Github</a>
         </div>
         <div class="grid__item">
-          <h2>Project 6</h2>
-          <p>Placeholder for a future project I plan to create</p>
-          <a href="#">Link</a>
+          <h2>myFlix Angular</h2>
+          <div>
+            <img class="example-img" alt="Angular Movie App Image" src="./img/myFlix-Angular.png"/>
+          </div>
+          <p>
+            A movie app built using Angular that allows users to view movie information and create a favorites list.
+          </p>
+          <a class="link-btn" href="./myFlix-angular.html">
+            Read More
+          </a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/myFlix-Angular-client">Code on Github</a>
+          <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://boundforearth.github.io/myFlix-Angular-client/welcome">Live App</a>
         </div>
       </div>
     </section>
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <a href="https://github.com/Boundforearth"><img src="./img/github.svg" alt="Github"></a>
-        <a href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
-        <a href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth"><img src="./img/github.svg" alt="Github"></a>
+        <a target="_blank" rel="noopener noreferrer" href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+        <a target="_blank" rel="noopener noreferrer" href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
       </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>

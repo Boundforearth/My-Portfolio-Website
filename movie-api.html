@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      Code by James
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/CF_portfolio_fav.ico">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+      <!--Maybe make a better logo-->
+      <a href="./index.html"> <img class="page-header__item logo-image" src="./img/My-logo.svg" alt="logo"> </a>
+      <nav class="page-header__item">
+        <ul class="navigation-list" role="menubar">
+          <li role="presentation">
+            <a class="navigation-list__item" href="./index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+             <a class="navigation-list__item" href="./about.html" role="menuitem">About Me</a>
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" id="navigation-list__item--active" href="./work.html" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" href="./contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header> 
+    <section>
+      <h1>
+        Movie API
+      </h1>
+      <div>
+        <img class="example-img" alt="Movie API code example" src="./img/Movie-API.png"/>
+      </div>
+      <h2>
+        About the Project
+      </h2>
+      <p>
+        This is an API that is to be used in conjunction with a front end movie app.
+        It has functionality to get that would allow users to sign up and be authenticated to use the app and can 
+        get information from the database.  The main goal of this project was to learn how create back end code 
+        and learn about noSQL databases.
+      </p>
+      <h2>
+        Technologies Used
+      </h2>
+      <ul>
+        <li>
+          Node
+        </li>
+        <li>
+          Express
+        </li>
+        <li>
+          Cors
+        </li>
+        <li>
+          Bcrypt
+        </li>
+        <li>
+          Jsonwebtoken
+        </li>
+        <li>
+          Mongoose
+        </li>
+        <li>
+          Morgan
+        </li>
+        <li>
+          Passport
+        </li>
+        <li>
+          MongoDB Atlas
+        </li>
+        <li>
+          Heroku
+        </li>
+        <li>
+          JSdoc
+        </li>
+      </ul>
+      <h2>
+        Features
+      </h2>
+      <ul>
+        <li>
+          Allows users to register and login.
+        </li>
+        <li>
+          Allows registered users to view information about movies that are included in the database.
+        </li>
+        <li>
+          Users will have a favorites list from which they can add or delete movies.
+        </li>
+        <li>
+          Users will be able to update their user information
+        </li>
+      </ul>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/movie_api">Code on GitHub</a>
+    </section>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth"><img src="./img/github.svg" alt="Github"></a>
+        <a target="_blank" rel="noopener noreferrer" href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+        <a target="_blank" rel="noopener noreferrer" href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
+      </div>
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+  </body>
+</html>

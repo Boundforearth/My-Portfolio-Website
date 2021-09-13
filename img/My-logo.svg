@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="My-logo.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -30,12 +30,13 @@
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1252"
-     inkscape:window-height="855"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-width="1242"
+     inkscape:window-height="847"
+     inkscape:window-x="10"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
-     units="px" />
+     units="px"
+     inkscape:snap-nodes="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -44,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +55,7 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:12.5737px;line-height:1.25;font-family:Herculanum;-inkscape-font-specification:Herculanum;stroke-width:0.314342"
+       style="font-size:12.57370000000000054px;line-height:1.25;font-family:Herculanum;-inkscape-font-specification:Herculanum;stroke-width:0.314342;fill:#f9f9f9;"
        x="0.91361302"
        y="9.9661665"
        id="text19"
@@ -63,6 +64,6 @@
          id="tspan17"
          x="0.91361302"
          y="9.9661665"
-         style="stroke-width:0.314342">JR</tspan></text>
+         style="stroke-width:0.314342;fill:#f9f9f9;">JR</tspan></text>
   </g>
 </svg>
