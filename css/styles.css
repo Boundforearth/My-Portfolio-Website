@@ -47,14 +47,15 @@ a:hover, a:focus{
 }
 
 button, 
-#button {
+.button {
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
   text-decoration: none;
   background-color: var(--link);
   border-bottom: 2px solid var(--button-border);
   border-right: 2px solid var(--button-border);
-  padding: 10px;
+  border-radius: 10px;
+  padding: .5rem;
   font-family: inherit;
   color: var(--grid);
   transition: opacity .5s;
@@ -62,8 +63,8 @@ button,
 
 button:hover, 
 button:focus,
-#button:hover,
-#button:focus {
+.button:hover,
+.button:focus {
   opacity: .8;
   cursor: pointer;
 }
@@ -73,31 +74,6 @@ table {
 }
 
 .about {
-  text-align: center;
-}
-/* contact page items */
-.contact-info {
-  text-align: center;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  max-width: 350px;
-
-}
-
-.contact form input,
-.contact form textarea {
-  margin-bottom: 20px;
-}
-
-.contact form label {
-  margin-bottom: 5px;
-}
-
-.contact form button {
   text-align: center;
 }
 
@@ -115,6 +91,7 @@ table {
 }
 
 .page-header__item:last-child {
+  min-width: 70%;
   flex-grow: 1;
   text-align: right;
 }
@@ -216,13 +193,25 @@ a, a.navigation-list__item {
   white-space: pre-line;
 }
 
+.code-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.video {
+  text-align: center;
+}
+
 /*footer*/
 .page-footer {
   background-color: var(--grid);
   clear: both;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 1rem;
   border-top: 1px solid var(--main-border);
   width: 100%;
 }
@@ -388,7 +377,8 @@ animation-direction: reverse;
 
   .navigation-list {
     display: grid;
-    grid-template-columns: 7.5em 7.5em;
+    padding: inherit;
+    grid-template-columns: 1fr 1.5fr 1fr;
     justify-content: end;
   }
 
@@ -408,17 +398,26 @@ animation-direction: reverse;
     top: 35%
   }
 
+  main {
+    margin: 3rem 0;
+  }
+
 }
 
 
 @media all and (max-width: 500px) {
-
   .page-header__item:last-child {
     text-align: left;
   }
 
   .navigation-list {
     justify-content: center;
+  }
+
+  .code-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 

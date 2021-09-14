@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.production.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -27,9 +27,6 @@
           <li role="presentation">
             <a class="navigation-list__item" href="./work.html" role="menuitem">Work</a>
           </li>
-          <li role="presentation">
-            <a class="navigation-list__item" href="./contact.html" role="menuitem">Contact</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -40,17 +37,25 @@
       <p class="silly-stuff2">It's all right! <br>You can come back!!</p>
       <div class="profile-description">
         <h1 class="hello" >Hello World!</h1>
-        <p>My name is James Rutkowski. <br>I am a <span>Web</span> Developer based in Michigan</p>
-        <a id="button" href="./work.html">Check out my code!</a>
+        <p>My name is James Rutkowski.  <br> I am a <span>Web</span> Developer based in Michigan.
+        </p>
+        <a class="button" href="./work.html">Check out my code!</a>
+        <a class="button" href="mailto:j.r.rutkowski52@gmail.com">Contact Me!</a>
       </div>
     </main>
     <footer class="page-footer">
+      <div>
+        <p class="email-me">Contact Info: </p>
+        <a class="email-me" href="mailto:j.r.rutkowski52@gmail.com">j.r.rutkowski52@gmail.com</a>
+      </div>
+      <div>
         <p>Find me on</p>
         <div class="social-media">
           <a href="https://github.com/Boundforearth"><img src="./img/github.svg" alt="Github"></a>
           <a href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
           <a href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
         </div>
+      </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>
   </body>
