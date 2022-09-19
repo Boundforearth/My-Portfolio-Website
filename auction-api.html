@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/CF_portfolio_fav.ico">
+  <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.production.css" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="page-header">
+    <!--Maybe make a better logo-->
+    <a href="./index.html"> <img class="page-header__item logo-image" src="./img/My-logo.svg" alt="logo"> </a>
+    <nav class="page-header__item">
+      <ul class="navigation-list" role="menubar">
+        <li role="presentation">
+          <a class="navigation-list__item" href="./index.html" role="menuitem">Home</a>
+        </li>
+        <li role="presentation">
+           <a class="navigation-list__item" href="./about.html" role="menuitem">About Me</a>
+        </li>
+        <li role="presentation">
+          <a class="navigation-list__item" id="navigation-list__item--active" href="./work.html" role="menuitem">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header> 
+  <section>
+    <h1>Auction API</h1>
+    <div>
+      <img class="example-img" alt="example code" src="./img/Auction-API.png"/>
+    </div>
+    <h2>About the Project</h2>
+    <p>This is an API for an auction website that would allow users to create auctions and bid on them if they create an account.  They 
+      should still be able to search for and view auctions if they don't have an account.  There were numerous goals for this project, one of 
+      which was using a SQL database with my website.  Refreshing my Javascript skills was another, since as of writing, I have been doing a 
+      lot more programming in Python.  
+    </p>
+    <p>
+      I felt like I learned quite a bit with this project.  Creating tests after everything else helped give me a greater appreciation 
+      for TDD.  This was also my first time using either of Mocha or Chai.  Creating the database tables and having to readjust them numerous 
+      times helped me see the sort of planning and care needed for database creation.  I learned a lot more about JWT tokens and how to use 
+      better than how I did in the movie API I created.  Having to end auctions automatically lead me to learning about CRON tasks and how they 
+      were not suited to what I wanted to do.
+    </p>
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>
+        Node
+      </li>
+      <li>
+        Express
+      </li>
+      <li>
+        Cors
+      </li>
+      <li>
+        Bcrypt
+      </li>
+      <li>
+        Jsonwebtoken
+      </li>
+      <li>
+        Morgan
+      </li>
+      <li>
+        Passport
+      </li>
+      <li>
+        Multer
+      </li>
+      <li>
+        date-fns
+      </li>
+      <li>
+        dotenv
+      </li>
+      <li>
+        PostgreSQL
+      </li>
+      <li>
+        Mocha
+      </li>
+      <li>
+        Chai and Chai-http
+      </li>
+    </ul>
+    <h2>
+      Features
+    </h2>
+    <ul>
+      <li>
+        Create an Account
+      </li>
+      <li>
+        Search for items by keyword
+      </li>
+      <li>
+        Create an auction and upload a photo of the item being sold
+      </li>
+      <li>
+        Place a bid on an auction
+      </li>
+      <li>
+        Leave feedback for the buyer/seller of the auction
+      </li>
+      <li>
+        Look up bid history of your own account or of an auction
+      </li>
+      <li>
+        Auctions automatically end after the selected number of days
+      </li>
+      <li>
+        Delete your own account
+      </li>
+    </ul>
+    <div class="code-links">
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://github.com/Boundforearth/auction_api">Code on Github</a>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div>
+      <p>Contact Info: </p>
+      <a href="mailto:j.r.rutkowski52@gmail.com">j.r.rutkowski52@gmail.com</a>
+    </div>
+    <div>
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/Boundforearth"><img src="./img/github.svg" alt="Github"></a>
+        <a href="#"><img src="./img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="./img/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/tota11y.min.js"></script>
+</body>
+</html>
