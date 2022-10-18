@@ -330,6 +330,11 @@ animation-direction: reverse;
   width: 33%;
 }
 
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*overwrites previous .grid if actually supported*/
 @supports (display: grid) {
   
